@@ -28,8 +28,8 @@ def index():
     return 'Hello, World!'
 
 
-@app.route('/hello')
-def say_hello():
+@app.route('/albums')
+def list_albums():
     return render_template('index.html', albums=albums, genres=genres)
 
 
